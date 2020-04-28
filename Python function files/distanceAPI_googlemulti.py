@@ -7,7 +7,7 @@ from itertools import tee
 df = pd.read_csv("PizzaEssentials.csv")
 
 #Perform request to use the Google Maps API web service
-API_key = 'AIzaSyAyTUcgbuwbey0p5n5q6BK-PMGHAoAgiJg'#enter Google Maps API key
+API_key = 'API_KEY'#enter Google Maps API key
 gmaps = googlemaps.Client(key=API_key)
 
 
