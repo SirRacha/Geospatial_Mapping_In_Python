@@ -13,3 +13,5 @@ logs/
 notebooks/.ipynb_checkpoints
 notebooks/.DS_Store
 shapefiles/.DS_Store
+**/*.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
