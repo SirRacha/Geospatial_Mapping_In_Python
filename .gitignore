@@ -1,0 +1,12 @@
+venv/
+.DS_Store
+.idea/
+venv/
+.ipynb_checkpoints/
+.vscode/
+test/
+train/
+images_to_spoof/
+__pycache__
+logs/
+.DS_Store
