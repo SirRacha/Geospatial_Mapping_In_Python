@@ -1,4 +1,4 @@
-# GEOmapping in Python
+# GEOSPATIAL MAPPING IN PYTHON
 An exploration into working with geospatial data, transforming data types, and visualizing geospatial data in a multitude of ways.  
 
 ## Online and Offline Access
@@ -61,6 +61,7 @@ I would suggest looking at them in this order:
 10. NYC_Mapping_Legend_Scalebar - Adding final touches that will help frame your geospatial product.
 	
 Others:
+
 11. NYC_Mapping-Google_OpenStrMap - A walthrough of how to use these tools. But I do not recommend using them. Look for information on how to use their APIs on their document websites.
 12. Google_Maps_API_Lat_Long - Google Maps does not give you coordinates but only url links. So I had to create the Latitude/Longitude coordinates from the exported Google Maps list. Please refer to the "Google_Maps_API.ipynb" tutorial notebook for how to get coordinates from Google Maps.
 
