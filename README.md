@@ -6,19 +6,20 @@ This project includes methods to work with data whether online and offline. Cert
 
 ## Data
 All data used here is open source.  
-	1) NYC Restaurants - DOHMH New York City Restaurant Inspection Results. Has 400,000 restarant locations!  It provides restaurant inspections, violations, grades and adjudication information. It can be found at the New York City's official mapping site. Who knew they had one, but they do! This is a very useful site to get lots of data. They also have shapefiles if you prefer. You need to download this dataset becuase of its size (163mb)
+	
+1) NYC Restaurants - DOHMH New York City Restaurant Inspection Results. Has 400,000 restarant locations!  It provides restaurant inspections, violations, grades and adjudication information. It can be found at the New York City's official mapping site. Who knew they had one, but they do! This is a very useful site to get lots of data. They also have shapefiles if you prefer. You need to download this dataset becuase of its size (163mb)
 	https://data.cityofnewyork.us/Health/DOHMH-New-York-City-Restaurant-Inspection-Results/43nn-pn8j
 
-		a)  I further curated this dataset down to call out only Pizza and Italian restaurants.
+	a)  I further curated this dataset down to call out only Pizza and Italian restaurants.
 		
-	2) Pizza Essentials - A small dataset I created in google maps for us to use. It inclides 22 places in  New York City that are worthy of Pizza pilgrimage.  https://drive.google.com/open?id=1JSRfjOm0ENoiQL1vbxv38UbF_4g_f5CO&usp=sharing
+2) Pizza Essentials - A small dataset I created in google maps for us to use. It inclides 22 places in  New York City that are worthy of Pizza pilgrimage.  https://drive.google.com/open?id=1JSRfjOm0ENoiQL1vbxv38UbF_4g_f5CO&usp=sharing
 
-		Google Maps does not give you coordinates but only url links. So I had to create the Latitude/Longitude coordinates from the exported Google Maps list. Please refer to the "Google_Maps_API.ipynb" tutorial notebook for how to get coordinates from Google Maps.
+	Google Maps does not give you coordinates but only url links. So I had to create the Latitude/Longitude coordinates from the exported Google Maps list. Please refer to the "Google_Maps_API.ipynb" tutorial notebook for how to get coordinates from Google Maps.
 
-	3) Subway Station Data locations. We'll use the locations
+3) Subway Station Data locations. We'll use the locations
 	https://data.cityofnewyork.us/Transportation/Subway-Stations/arq3-7z49
 
-	4) Geopandas New York City Boroughs Polygon, "nybb". Used as a background layer.
+4) Geopandas New York City Boroughs Polygon, "nybb". Used as a background layer.
 
 ## Anlaysis of Python Packages
 This group of materials serves as an Analysis of Tools available for mapping and plotting geolocated data.  I attempted to look at most all libraries available to me: Pandas, GeoPandas, Matplotlib, Basemap library, Plotly, MapBox tiles. Folium, Rasterio, Contextily tiles, OpenStreetMap tiles, Shapely, Descartes, SciPy and Google APIs.  
