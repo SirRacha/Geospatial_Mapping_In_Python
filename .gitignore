@@ -1,7 +1,6 @@
 venv/
 .DS_Store
 .idea/
-venv/
 .ipynb_checkpoints/
 .vscode/
 test/
