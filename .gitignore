@@ -6,12 +6,9 @@ venv/
 .vscode/
 test/
 train/
-images_to_spoof/
 __pycache__
 logs/
-.DS_Store
 notebooks/.ipynb_checkpoints
-notebooks/.DS_Store
-shapefiles/.DS_Store
+*/.DS_Store
 **/*.ipynb_checkpoints/
 */.ipynb_checkpoints/*

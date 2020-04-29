@@ -6,17 +6,16 @@ from ortools.constraint_solver import pywrapcp
 import pandas as pd
 
 
-
 def create_data_model():
     """Stores the data for the problem."""
     data = {}
-    DM = pd.read_csv('test_matrix2.csv')
+    DM = pd.read_csv('../data/test_matrix2.csv')
     data['distance_matrix'] = DM.values.tolist()  # yapf: disable
     data['num_vehicles'] = 1
     data['depot'] = 5
     return data
 
- 
+
 def print_solution(manager, routing, solution):
     """Prints solution on console."""
     print('Objective: {} miles'.format(solution.ObjectiveValue()))
@@ -27,7 +26,8 @@ def print_solution(manager, routing, solution):
         plan_output += ' {} ->'.format(manager.IndexToNode(index))
         previous_index = index
         index = solution.Value(routing.NextVar(index))
-        route_distance += routing.GetArcCostForVehicle(previous_index, index, 0)
+        route_distance += routing.GetArcCostForVehicle(
+            previous_index, index, 0)
     plan_output += ' {}\n'.format(manager.IndexToNode(index))
     print(plan_output)
     plan_output += 'Route distance: {}miles\n'.format(route_distance)
@@ -44,7 +44,6 @@ def main():
 
     # Create Routing Model.
     routing = pywrapcp.RoutingModel(manager)
-
 
     def distance_callback(from_index, to_index):
         """Returns the distance between the two nodes."""
@@ -69,6 +68,7 @@ def main():
     # Print solution on console.
     if solution:
         print_solution(manager, routing, solution)
+
 
 if __name__ == '__main__':
     main()
