@@ -1,6 +1,6 @@
-# Use the Distance Calculator and comment out which distance you want to have run.
+# These files are for creating distance matrices so you can then run the TSP solvers however you wish. There are many methods to do this. I only propose a few.
 
-## These files are for createing distance matrices so you can then run the TSP solvers however you wish. There are many methods to do this. I only propose a few.
+# Use the Distance Calculator and comment out which distance you want to have run.
 
 # Make sure to change the file name to represent what type of distance calculation you used.
 
