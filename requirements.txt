@@ -42,4 +42,4 @@ seaborn
 shapely  
 sklearn      
 statsmodels 
-tsp-solver2==0.3     
+#tsp-solver2==0.3     
