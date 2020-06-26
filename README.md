@@ -71,7 +71,7 @@ _______________________________________________
 
 1. Create a virtual environment
 ```
-virtualenv -p Python3 .
+virtualenv -p python3 .
 ```
 2. Activate the virtual environment
 ```
